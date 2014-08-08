@@ -1,0 +1,17 @@
+"./Project_Settings/Startup_Code/kinetis_sysinit.o"
+"./Project_Settings/Startup_Code/__arm_start.o"
+"./Project_Settings/Startup_Code/__arm_end.o"
+"./Sources/main.o"
+-mcpu=cortex-m4
+-mthumb
+-mfloat-abi=soft
+-g3
+-gdwarf-2
+-gstrict-dwarf
+-T"D:/MyProject/CwWs/test/Project_Settings/Linker_Files/MK60DN512_flash.ld"
+-Xlinker
+--gc-sections
+-L"D:/Program Files/Freescale/CW MCU v10.6/MCU/ARM_GCC_Support/ewl/lib/armv7e-m"
+-Wl,-Map,test.map
+-n
+-specs=ewl_c9x_c++_hosted.specs
